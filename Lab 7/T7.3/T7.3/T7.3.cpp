@@ -30,22 +30,22 @@ public:
 
 class Driver
 {
-	string name;
-	int age;
+	string name_;
+	int age_;
 public:
-	Driver() : age(0), name("") {};
-	Driver(string name, int age) :name(name), age(age) {};
+	Driver() : age_(0), name_("") {};
+	Driver(string name, int age) :name_(name), age_(age) {};
 	friend ostream& operator<<(ostream& os, const Driver& d) {
-		cout << " [ " << d.name << " , " << d.age << " ] ";
+		cout << " [ " << d.name_ << " , " << d.age_ << " ] ";
 		return os;
 	}
 	void setAge(int a)
 	{
-		age = a;
+		age_ = a;
 	}
 	void setName(string nm)
 	{
-		name = nm;
+		name_ = nm;
 	}
 };
 

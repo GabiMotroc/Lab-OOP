@@ -23,7 +23,7 @@ public:
 	void displayStudentList() {
 		cout << "{";
 
-		for (auto it : studentList)
+		for (const auto& it : studentList)
 		{
 			cout << "{";
 			cout << "fullName: " << it.fullname << ", ";
